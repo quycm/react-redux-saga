@@ -37,5 +37,17 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "husky": "^4.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,css}" : [
+      "eslint src",
+      "npm run format",
+      "git add"
+    ]
   }
 }

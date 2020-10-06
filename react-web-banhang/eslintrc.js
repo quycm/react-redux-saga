@@ -19,7 +19,19 @@ module.exports = {
         'react/jsx-one-expression-per-line':0,
         'react/forbid-prop-types': 0,
         'react/require-default-props': 0,
-        'prettier/prettier' : ['error']
+        'prettier/prettier' : ['error'],
+        'no-unuserd-vars': 1,
+        'import/extensions': 0,
+        'import/order': 1,
+        'react/prefer-stateless-function': 0,
+        'no-use-before-define': 0,
+        'no-param-reassign': 0,
+        'import/no-useless-path-segements':0,
+        'import/prefer-default-export': 0,
+        'react/jsx-uses-vars': 2
     },
-    plugins: ['prettier']
+    plugins: ['prettier'],
+    env : {
+        "es6": true
+    }
 }
